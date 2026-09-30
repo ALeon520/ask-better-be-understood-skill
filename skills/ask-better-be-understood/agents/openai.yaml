@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ask Better. Be Understood."
+  short_description: "Your intent, expressed clearly and ready to reuse"
+  default_prompt: "Use $ask-better-be-understood to make this draft easier to understand, keeping my meaning, language, and stated requirements."

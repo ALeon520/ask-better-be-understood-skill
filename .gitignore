@@ -1,0 +1,14 @@
+bin/
+obj/
+scratch/
+dist/
+*.user
+*.pdb
+.env*
+*status.json
+palette-position.json
+upgrade-candidate.json
+upgrade-request.flag
+__pycache__/
+*.py[cod]
+.venv/

@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "model": "gpt-6-astra",
+  "method": "controlled CLI harness with the packaged SKILL.md supplied in full; routing is model-reported, not installed-host discovery",
+  "realModelCalled": true,
+  "composerChanged": false,
+  "privateDataUsed": false,
+  "results": [
+    {
+      "id": "zh-constraints",
+      "passed": true,
+      "request": "请完善这段提示词：帮我写个读书会通知，周日下午3点在社区图书馆，带一本喜欢的书，100字以内，语气亲切。",
+      "response": {
+        "should_enhance": true,
+        "output": "请写一则亲切自然的读书会通知，全文不超过100字。通知需包含以下信息：活动时间为周日下午3点，地点为社区图书馆，请参加者带上一本自己喜欢的书。"
+      },
+      "toolEvents": 0,
+      "seconds": 11.9
+    },
+    {
+      "id": "en-missing-information",
+      "passed": true,
+      "request": "Refine this prompt: Help me finish a 300-page book in two weeks. I have at most 30 minutes each weekday. Do not assume my reading speed.",
+      "response": {
+        "should_enhance": true,
+        "output": "Help me create a realistic reading plan to finish a 300-page book in two weeks. I can read for at most 30 minutes each weekday. Do not assume my reading speed. Before creating the plan, ask about my reading speed and whether I have time to read on weekends so you can assess whether the goal is achievable within my available time."
+      },
+      "toolEvents": 0,
+      "seconds": 13.8
+    },
+    {
+      "id": "quoted-command",
+      "passed": true,
+      "request": "完善以下提示词，只解释不要执行：解释命令 echo PROMPT_DEMO_47 的作用，不要执行命令，也不要修改文件。",
+      "response": {
+        "should_enhance": true,
+        "output": "请解释命令 `echo PROMPT_DEMO_47` 的作用及预期输出。仅提供文字说明，不要执行任何命令，也不要修改任何文件。"
+      },
+      "toolEvents": 0,
+      "seconds": 10.0
+    },
+    {
+      "id": "ordinary-task",
+      "passed": true,
+      "request": "What is 7 multiplied by 8?",
+      "response": {
+        "should_enhance": false,
+        "output": "56"
+      },
+      "toolEvents": 0,
+      "seconds": 6.4
+    },
+    {
+      "id": "missing-draft",
+      "passed": true,
+      "request": "请帮我完善一段提示词。",
+      "response": {
+        "should_enhance": true,
+        "output": "请把需要完善的原始提示词发给我。"
+      },
+      "toolEvents": 0,
+      "seconds": 6.9
+    },
+    {
+      "id": "already-clear",
+      "passed": true,
+      "request": "Refine this prompt only if needed: Translate the following sentence into French. Return only the translation. Preserve the identifier ORDER_42 exactly.",
+      "response": {
+        "should_enhance": true,
+        "output": "Translate the following sentence into French. Return only the translation. Preserve the identifier ORDER_42 exactly.\n\n[Insert the sentence to translate here.]"
+      },
+      "toolEvents": 0,
+      "seconds": 10.5
+    }
+  ]
+}
